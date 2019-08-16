@@ -1,0 +1,13 @@
+<mat-card class="mt-2">
+    <div>
+        <mat-checkbox class="ml-3" [(ngModel)]="firstChild">Select first child</mat-checkbox>
+        <mat-checkbox class="ml-3" [(ngModel)]="secondChild">Select second child</mat-checkbox>
+        <mat-checkbox class="ml-3" [(ngModel)]="thirdChild">Select third child</mat-checkbox>
+    </div>
+
+    <div class="mt-5">
+        <first-child [(trigger)]="firstChild"></first-child>
+        <second-child [(trigger)]="secondChild"></second-child>
+        <third-child [(trigger)]="thirdChild"></third-child>
+    </div>
+</mat-card>
